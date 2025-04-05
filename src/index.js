@@ -16,11 +16,11 @@
 // app.listen(5000, () => console.log("Server running on port 5000"));
 
 
-import dotenv from 'dotenv';
+//import dotenv from 'dotenv';
 import Db from './config/db.js';
 import user from "./model/userModel.js";
 
-dotenv.config();
+//dotenv.config();
 Db()
     
 const run=async()=>{
