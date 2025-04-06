@@ -18,14 +18,4 @@
 
 import mongoose from "mongoose";
 
-const connectDB = async () => {
-  try {
-    await mongoose.connect('mongodb://localhost:27017/testdb')
-
-    console.log("connected to MongoDB");
-  } catch (err) {
-    console.error("MongoDB connection error:", err.message);
- 
-  }
-};
 export default connectDB;

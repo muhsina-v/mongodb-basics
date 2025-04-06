@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "An Express app to manage users with MongoDB, JWT, and Multer",
   "type": "module",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js",
     "start": "nodemon index.js"
   },
   "repository": {
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/muhsina-v/mongodb-basics#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.18.2",

@@ -1,15 +1,12 @@
-// import express from "express"
-// const { createUser, getUsers, getUserById, updateUser, deleteUser } = require("../controllers/userController");
-// const verifyToken = require("../middleware/authMiddleware");
-// const multer = require("multer");
+import express from "express";
+import {
+  getAllProducts,
+  getProductsById,
+} from "../controllers/productController.js";
 
-// const upload = multer({ dest: "uploads/" });
-// const router = express.Router();
+const router = express.Router();
 
-// router.post("/", verifyToken, upload.single("photo"), createUser);
-// router.get("/", verifyToken, getUsers);
-// router.get("/:id", verifyToken, getUserById);
-// router.put("/:id", verifyToken, updateUser);
-// router.delete("/:id", verifyToken, deleteUser);
+router.get("/getAllProducts", getAllProducts)
+.get("/getById", getProductsById);
 
-// module.exports = router;
+export default router;
