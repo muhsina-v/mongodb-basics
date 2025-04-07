@@ -21,6 +21,7 @@ const getProductsById = async (req, res) => {
             message:"not found"
         })
     }
+    
 
     res.status(200).json({
       data: products,
@@ -28,6 +29,9 @@ const getProductsById = async (req, res) => {
   } catch (error) {
     console.log(error)
   }
-};
+}
+
+
+
 
 export { getAllProducts,getProductsById };
