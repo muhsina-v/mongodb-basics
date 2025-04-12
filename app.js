@@ -7,12 +7,16 @@ const app = express();
 
 configDotenv();
 
-app.use(express.json());
+app.use(express.json())
 app.use(cookieParser())
 
 app.get("/home/:id", (req, res) => {
   res.send(req.params.id);
 });
+
+app.get("/m",(req,res)=>{
+    res.json({message:"muhsinaaaa age place"})
+})
 
 app.use('/user',userRoutes)
 
@@ -21,6 +25,6 @@ mongoose
   .then(() => console.log("connected"))
   .catch((error) => console.log(error));
 
-app.listen(4000, () => {
+app.listen(4005, () => {
   console.log("working");
 });

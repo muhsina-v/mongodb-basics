@@ -22,6 +22,7 @@ import user from "./model/userModel.js";
 
 //dotenv.config();
 Db()
+
     
 const run=async()=>{
     try{
